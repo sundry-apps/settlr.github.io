@@ -3,7 +3,7 @@
 
 const APP_STORE_URL = 'https://apps.apple.com/app/settlr/id000000000'; // TODO
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.sundry.settlr'; // TODO
-const FALLBACK_URL = 'https://settlr.tech';
+const FALLBACK_URL = 'https://settlr.sundryapps.tech';
 
 const ua = navigator.userAgent || navigator.vendor || window.opera;
 
