@@ -20,8 +20,8 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: #0f0f13;
-            color: #f5f5f7;
+            background: linear-gradient(135deg, #e8f8f5, #f0f4ff, #faf8ff);
+            color: #14181f;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -29,6 +29,53 @@
             justify-content: center;
             text-align: center;
             padding: 40px 24px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .blob-teal {
+            width: 320px;
+            height: 320px;
+            top: -60px;
+            left: -80px;
+            background: radial-gradient(circle, rgba(28, 194, 159, 0.35), rgba(28, 194, 159, 0) 70%);
+            animation: floatSlow 18s ease-in-out infinite;
+        }
+
+        .blob-orange {
+            width: 360px;
+            height: 360px;
+            bottom: -100px;
+            right: -100px;
+            background: radial-gradient(circle, rgba(255, 69, 0, 0.25), rgba(255, 69, 0, 0) 70%);
+            animation: floatSlow 22s ease-in-out infinite reverse;
+        }
+
+        @keyframes floatSlow {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(30px, 40px);
+            }
+        }
+
+        h1,
+        p,
+        .badges,
+        .back {
+            position: relative;
+            z-index: 1;
         }
 
         h1 {
@@ -38,7 +85,7 @@
         }
 
         p {
-            color: #a1a1aa;
+            color: #55607a;
             margin-bottom: 36px;
             line-height: 1.6;
         }
@@ -62,22 +109,25 @@
 
         .back {
             margin-top: 40px;
-            color: #52525b;
+            color: #7c8494;
             font-size: 0.85rem;
         }
 
         .back a {
-            color: #71717a;
+            color: #55607a;
             text-decoration: none;
         }
 
         .back a:hover {
-            color: #a1a1aa;
+            color: #14181f;
         }
     </style>
 </head>
 
 <body>
+    <div class="blob blob-teal"></div>
+    <div class="blob blob-orange"></div>
+
     <h1>Download Settlr</h1>
     <p>Redirecting you to the right store…<br />If nothing happens, pick your platform below.</p>
 
