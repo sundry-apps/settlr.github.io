@@ -229,41 +229,6 @@
             height: clamp(58px, 9.2vh, 96px);
         }
 
-        .features {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: clamp(10px, 1.8vh, 18px);
-            max-width: 980px;
-            width: 100%;
-        }
-
-        .feature {
-            background: rgba(255, 255, 255, 0.7);
-            border: 1px solid rgba(20, 24, 31, 0.06);
-            border-radius: 16px;
-            padding: clamp(12px, 1.9vh, 22px) 20px;
-            text-align: left;
-            box-shadow: 0 4px 20px rgba(20, 24, 31, 0.05);
-        }
-
-        .feature-icon {
-            font-size: clamp(1.3rem, 2.4vh, 1.7rem);
-            margin-bottom: 6px;
-        }
-
-        .feature h3 {
-            font-size: 0.95rem;
-            font-weight: 600;
-            margin-bottom: 4px;
-            color: #14181f;
-        }
-
-        .feature p {
-            font-size: 0.8rem;
-            color: #5b6472;
-            line-height: 1.4;
-        }
-
         footer {
             text-align: center;
             padding: clamp(8px, 1.5vh, 20px) 24px;
@@ -283,21 +248,9 @@
             color: #14181f;
         }
 
-        @media (max-height: 820px) {
-            .features {
-                display: none;
-            }
-        }
-
         @media (max-height: 600px) {
             .hero-logo {
                 display: none;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .features {
-                grid-template-columns: repeat(2, 1fr);
             }
         }
 
@@ -346,39 +299,6 @@
                 <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
                     alt="Get it on Google Play" class="google-play-badge" />
             </a>
-        </div>
-
-        <div class="features">
-            <div class="feature">
-                <div class="feature-icon">👥</div>
-                <h3>Group expenses</h3>
-                <p>Track shared costs for trips, households, or any group of friends.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">⚖️</div>
-                <h3>Smart splits</h3>
-                <p>Split equally, by exact amount, percentage, or share.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">📊</div>
-                <h3>Instant balances</h3>
-                <p>See who owes what at a glance, with simplified debt resolution.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">💬</div>
-                <h3>Group chat</h3>
-                <p>Chat, share updates, and keep everyone in the loop — no other app needed.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🌍</div>
-                <h3>Multi-currency</h3>
-                <p>Live exchange rates make splitting costs abroad effortless.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🙋</div>
-                <h3>Guest access</h3>
-                <p>Join a group and split costs — no account required.</p>
-            </div>
         </div>
     </main>
 
