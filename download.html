@@ -106,10 +106,26 @@
 
         h1,
         p,
+        .brand,
         .badges,
         .back {
             position: relative;
             z-index: 1;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #14181f;
+        }
+
+        .brand img {
+            width: 32px;
+            height: 32px;
+            border-radius: 9px;
         }
 
         h1 {
@@ -159,6 +175,8 @@
 <body>
     <div class="blob blob-teal"></div>
     <div class="blob blob-orange"></div>
+
+    <div class="brand"><img src="/assets/logo.png" alt="Settlr logo" /> Settlr</div>
 
     <h1>Download Settlr</h1>
     <p>Redirecting you to the right store…<br />If nothing happens, pick your platform below.</p>

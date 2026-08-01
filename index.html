@@ -143,10 +143,19 @@
         }
 
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             font-size: 1.4rem;
             font-weight: 800;
             color: #14181f;
             letter-spacing: -0.5px;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 9px;
         }
 
         nav a {
@@ -310,7 +319,7 @@
     <div class="blob blob-indigo"></div>
 
     <header>
-        <div class="logo">Settlr</div>
+        <div class="logo"><img src="/assets/logo.png" alt="Settlr logo" class="logo-icon" /> Settlr</div>
         <nav>
             <a href="/support.html">Support</a>
             <a href="/privacy-policy.html">Privacy</a>
