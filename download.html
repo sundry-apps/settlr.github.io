@@ -18,19 +18,25 @@
             padding: 0;
         }
 
+        html {
+            height: 100%;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #e8f8f5, #f0f4ff, #faf8ff);
             color: #14181f;
-            min-height: 100vh;
+            height: 100vh;
+            height: 100dvh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 40px 24px;
+            padding: clamp(16px, 4vh, 40px) 24px;
+            gap: clamp(8px, 1.6vh, 16px);
             position: relative;
-            overflow-x: hidden;
+            overflow: hidden;
         }
 
         .blob {
@@ -46,7 +52,7 @@
             top: -60px;
             left: -80px;
             background: radial-gradient(circle, rgba(28, 194, 159, 0.35), rgba(28, 194, 159, 0) 70%);
-            animation: floatSlow 18s ease-in-out infinite;
+            animation: floatTeal 16s ease-in-out infinite;
         }
 
         .blob-orange {
@@ -55,18 +61,46 @@
             bottom: -100px;
             right: -100px;
             background: radial-gradient(circle, rgba(255, 69, 0, 0.25), rgba(255, 69, 0, 0) 70%);
-            animation: floatSlow 22s ease-in-out infinite reverse;
+            animation: floatOrange 20s ease-in-out infinite;
         }
 
-        @keyframes floatSlow {
+        @keyframes floatTeal {
 
             0%,
             100% {
                 transform: translate(0, 0);
             }
 
+            25% {
+                transform: translate(90px, 60px);
+            }
+
             50% {
-                transform: translate(30px, 40px);
+                transform: translate(40px, 140px);
+            }
+
+            75% {
+                transform: translate(-60px, 50px);
+            }
+        }
+
+        @keyframes floatOrange {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(-80px, 70px);
+            }
+
+            50% {
+                transform: translate(-120px, -40px);
+            }
+
+            75% {
+                transform: translate(-30px, -90px);
             }
         }
 
@@ -79,15 +113,14 @@
         }
 
         h1 {
-            font-size: 2rem;
+            font-size: clamp(1.6rem, 2.4vw + 2.4vh, 2.4rem);
             font-weight: 700;
-            margin-bottom: 12px;
         }
 
         p {
             color: #55607a;
-            margin-bottom: 36px;
-            line-height: 1.6;
+            line-height: 1.5;
+            font-size: clamp(0.95rem, 0.7vw + 1.2vh, 1.15rem);
         }
 
         .badges {
@@ -99,16 +132,15 @@
         }
 
         .badges a img {
-            height: 52px;
+            height: clamp(40px, 6.5vh, 62px);
             object-fit: contain;
         }
 
         .badges a img.google-play-badge {
-            height: 76px;
+            height: clamp(58px, 9.2vh, 96px);
         }
 
         .back {
-            margin-top: 40px;
             color: #7c8494;
             font-size: 0.85rem;
         }
