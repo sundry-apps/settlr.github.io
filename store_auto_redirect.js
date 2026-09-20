@@ -1,6 +1,6 @@
 // Auto-redirect mobile users to the appropriate app store.
 
-const APP_STORE_URL = 'https://apps.apple.com/gr/app/settlr-expense-splitter/id6762055449';
+const APP_STORE_URL = 'https://apps.apple.com/app/settlr-expense-splitter/id6762055449';
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.sundry.settlr';
 const FALLBACK_URL = 'https://settlr.sundryapps.tech';
 

@@ -4,14 +4,128 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Settlr – Split expenses. Settle up.</title>
+    <title>Settlr – Split Expenses, Share Group Bills & Settle Up Effortlessly</title>
     <meta name="description"
-        content="Settlr makes splitting bills and settling up with friends simple. Track group expenses, balances, and settle with one tap." />
+        content="Settlr is the modern expense splitter app for roommates, group trips, couples, and friends. Track shared costs, split bills fairly, simplify debts, and settle up in one tap. Free on iOS & Android." />
+    <meta name="keywords"
+        content="split expenses, bill splitter, group expense tracker, splitwise alternative, roommate bill tracker, shared vacation costs, trip expense calculator, settle debts, split rent" />
+    <link rel="canonical" href="https://settlr.sundryapps.tech/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://settlr.sundryapps.tech/" />
+    <meta property="og:title" content="Settlr – Split Expenses, Share Group Bills & Settle Up" />
+    <meta property="og:description"
+        content="The hassle-free group expense manager for trips, roommates, couples, and friends. Track shared spending, simplify group balances, and settle up in one tap." />
+    <meta property="og:image" content="https://settlr.sundryapps.tech/assets/logo.png" />
+    <meta property="og:site_name" content="Settlr" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Settlr – Split Expenses & Settle Up Effortlessly" />
+    <meta name="twitter:description"
+        content="Track shared expenses, simplify group debts, and settle up seamlessly. Free on iOS and Android." />
+    <meta name="twitter:image" content="https://settlr.sundryapps.tech/assets/logo.png" />
+
+    <!-- Search & AI Engine Directives -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
+
+    <!-- Structured Data (JSON-LD) for SEO & AI Recommendations -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://settlr.sundryapps.tech/#software",
+          "name": "Settlr",
+          "alternateName": "Settlr Expense Splitter",
+          "operatingSystem": "iOS, Android",
+          "applicationCategory": "FinanceApplication",
+          "applicationSubCategory": "Expense Tracker & Bill Splitter",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "description": "Settlr makes tracking shared expenses with friends, roommates, family, and travel groups effortless. Features include split by percentage or exact amount, multi-currency support, debt simplification, group collaboration boards, and one-tap settlement recording.",
+          "featureList": [
+            "Equal, exact amount, and percentage-based bill splitting",
+            "Automatic debt simplification calculation",
+            "Multi-currency expense tracking",
+            "Group collaboration boards (notes, checklists, countdowns, weather, maps)",
+            "Guest access with instant invite codes",
+            "Spending analytics and CSV export",
+            "No ads, no transaction fees, privacy-first"
+          ],
+          "installUrl": [
+            "https://apps.apple.com/app/settlr-expense-splitter/id6762055449",
+            "https://play.google.com/store/apps/details?id=com.sundry.settlr"
+          ],
+          "image": "https://settlr.sundryapps.tech/assets/logo.png"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://settlr.sundryapps.tech/#website",
+          "url": "https://settlr.sundryapps.tech/",
+          "name": "Settlr",
+          "description": "Split expenses. Settle up effortlessly.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Settlr",
+            "url": "https://settlr.sundryapps.tech/",
+            "logo": "https://settlr.sundryapps.tech/assets/logo.png"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://settlr.sundryapps.tech/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is Settlr completely free to use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Settlr is free to download and use on both iOS and Android. You can create unlimited groups, add unlimited expenses, and track shared balances without subscription paywalls."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does Settlr simplify group debts?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Settlr uses an automated balance simplification algorithm that minimizes the total number of transactions required for a group to settle up, ensuring nobody has to make multiple cross-payments."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do all group members need to download the app to participate?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No! Settlr supports guest members and web invite links, allowing group members to participate and view group balances even before installing the app."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Settlr handle multiple currencies for international travel?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Settlr supports multi-currency expense entries, making it ideal for vacations, international group trips, and digital nomads."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
     <style>
         *,
         *::before,
@@ -22,15 +136,14 @@
         }
 
         html {
-            height: 100%;
+            scroll-behavior: smooth;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: linear-gradient(135deg, #e8f8f5, #f0f4ff, #faf8ff);
             color: #14181f;
             min-height: 100vh;
-            min-height: 100dvh;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -46,8 +159,8 @@
         }
 
         .blob-teal {
-            width: 320px;
-            height: 320px;
+            width: 380px;
+            height: 380px;
             top: -60px;
             left: -80px;
             background: radial-gradient(circle, rgba(28, 194, 159, 0.35), rgba(28, 194, 159, 0) 70%);
@@ -55,17 +168,17 @@
         }
 
         .blob-orange {
-            width: 360px;
-            height: 360px;
+            width: 400px;
+            height: 400px;
             top: 260px;
             right: -100px;
-            background: radial-gradient(circle, rgba(255, 69, 0, 0.25), rgba(255, 69, 0, 0) 70%);
+            background: radial-gradient(circle, rgba(255, 69, 0, 0.22), rgba(255, 69, 0, 0) 70%);
             animation: floatOrange 20s ease-in-out infinite;
         }
 
         .blob-indigo {
-            width: 260px;
-            height: 260px;
+            width: 320px;
+            height: 320px;
             bottom: 40px;
             left: 60px;
             background: radial-gradient(circle, rgba(92, 107, 192, 0.25), rgba(92, 107, 192, 0) 70%);
@@ -139,31 +252,40 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: clamp(10px, 2vh, 20px) clamp(20px, 4vw, 40px);
-            flex-shrink: 0;
+            padding: clamp(14px, 2.5vh, 24px) clamp(20px, 5vw, 60px);
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             font-size: 1.4rem;
             font-weight: 800;
             color: #14181f;
             letter-spacing: -0.5px;
+            text-decoration: none;
         }
 
         .logo-icon {
-            width: 32px;
-            height: 32px;
-            border-radius: 9px;
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: clamp(12px, 2.5vw, 28px);
         }
 
         nav a {
             color: #55607a;
             text-decoration: none;
-            font-size: 0.9rem;
-            margin-left: 24px;
+            font-size: 0.95rem;
+            font-weight: 500;
             transition: color 0.2s;
         }
 
@@ -171,45 +293,82 @@
             color: #14181f;
         }
 
+        .nav-btn {
+            background: #14181f;
+            color: #fff !important;
+            padding: 8px 18px;
+            border-radius: 99px;
+            font-weight: 600 !important;
+            transition: background 0.2s, transform 0.15s !important;
+        }
+
+        .nav-btn:hover {
+            background: #1cc29f !important;
+            transform: translateY(-1px);
+        }
+
         main {
             flex: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            width: 100%;
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: clamp(20px, 4vh, 48px) 24px 64px;
+            gap: clamp(48px, 8vh, 88px);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
-            padding: clamp(8px, 2vh, 24px) 24px;
-            gap: clamp(10px, 2vh, 22px);
-            min-height: 0;
+            gap: clamp(14px, 2.2vh, 24px);
+            max-width: 820px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(28, 194, 159, 0.14);
+            color: #0d8b70;
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 99px;
+            border: 1px solid rgba(28, 194, 159, 0.3);
         }
 
         .hero-logo {
-            width: clamp(56px, 5vw + 5vh, 96px);
-            height: clamp(56px, 5vw + 5vh, 96px);
+            width: clamp(64px, 7vw, 96px);
+            height: clamp(64px, 7vw, 96px);
             border-radius: 24%;
-            box-shadow: 0 8px 28px rgba(20, 24, 31, 0.15);
+            box-shadow: 0 12px 32px rgba(20, 24, 31, 0.14);
         }
 
         h1 {
-            font-size: clamp(1.5rem, 1.8vw + 2vh, 2.9rem);
+            font-size: clamp(2.2rem, 3.5vw + 1.2vh, 3.8rem);
             font-weight: 800;
-            line-height: 1.1;
-            letter-spacing: -1px;
-            max-width: 700px;
+            line-height: 1.08;
+            letter-spacing: -1.5px;
+            color: #14181f;
         }
 
         h1 span {
-            background: linear-gradient(135deg, #1cc29f, #5c6bc0);
+            background: linear-gradient(135deg, #1cc29f, #4a5dc5);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         .subtitle {
-            font-size: clamp(0.95rem, 0.7vw + 1.3vh, 1.2rem);
+            font-size: clamp(1.05rem, 1vw + 0.8vh, 1.25rem);
             color: #55607a;
-            max-width: 520px;
-            line-height: 1.5;
+            max-width: 620px;
+            line-height: 1.6;
         }
 
         .store-badges {
@@ -218,49 +377,285 @@
             gap: 16px;
             flex-wrap: wrap;
             justify-content: center;
+            margin-top: 8px;
         }
 
         .store-badges a img {
-            height: clamp(40px, 6.5vh, 62px);
+            height: clamp(44px, 6.5vh, 58px);
             object-fit: contain;
+            transition: transform 0.2s;
         }
 
         .store-badges a img.google-play-badge {
-            height: clamp(58px, 9.2vh, 96px);
+            height: clamp(64px, 9.2vh, 86px);
+        }
+
+        .store-badges a:hover img {
+            transform: translateY(-2px);
+        }
+
+        /* Section Generic */
+        .section-header {
+            text-align: center;
+            max-width: 680px;
+            margin: 0 auto 36px;
+        }
+
+        .section-tag {
+            text-transform: uppercase;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+            color: #1cc29f;
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            font-size: clamp(1.7rem, 2.2vw + 1vh, 2.4rem);
+            font-weight: 800;
+            letter-spacing: -0.8px;
+            color: #14181f;
+            line-height: 1.2;
+        }
+
+        .section-desc {
+            font-size: 1.02rem;
+            color: #5b667e;
+            margin-top: 10px;
+            line-height: 1.55;
+        }
+
+        /* Feature Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            width: 100%;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 32px 28px;
+            text-align: left;
+            box-shadow: 0 10px 30px rgba(20, 24, 31, 0.05);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(20, 24, 31, 0.09);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 16px;
+            display: inline-block;
+            background: #f0f7f5;
+            width: 52px;
+            height: 52px;
+            line-height: 52px;
+            text-align: center;
+            border-radius: 14px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.22rem;
+            font-weight: 700;
+            color: #14181f;
+            margin-bottom: 10px;
+            letter-spacing: -0.3px;
+        }
+
+        .feature-card p {
+            color: #55607a;
+            font-size: 0.96rem;
+            line-height: 1.55;
+        }
+
+        /* Use Cases Section */
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            width: 100%;
+        }
+
+        .use-case-card {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(248, 250, 255, 0.85) 100%);
+            border: 1px solid rgba(220, 227, 242, 0.7);
+            border-radius: 18px;
+            padding: 24px;
+            text-align: left;
+        }
+
+        .use-case-card h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #14181f;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .use-case-card p {
+            font-size: 0.9rem;
+            color: #5b667e;
+            line-height: 1.5;
+        }
+
+        /* Comparison Table (GEO / AI Query Anchor) */
+        .comparison-section {
+            width: 100%;
+        }
+
+        .comparison-table-wrapper {
+            background: rgba(255, 255, 255, 0.92);
+            border-radius: 20px;
+            padding: 8px;
+            box-shadow: 0 12px 36px rgba(20, 24, 31, 0.06);
+            border: 1px solid rgba(220, 227, 242, 0.8);
+            overflow-x: auto;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.94rem;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 16px 20px;
+            border-bottom: 1px solid #f0f3f8;
+        }
+
+        .comparison-table th {
+            font-weight: 700;
+            color: #14181f;
+            background: #fafbfe;
+        }
+
+        .comparison-table th.highlight-col,
+        .comparison-table td.highlight-col {
+            background: rgba(28, 194, 159, 0.07);
+            font-weight: 600;
+            color: #0c735d;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .check-yes {
+            color: #1cc29f;
+            font-weight: bold;
+        }
+
+        .check-no {
+            color: #a0aec0;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            width: 100%;
+            max-width: 860px;
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            text-align: left;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 16px;
+            padding: 22px 26px;
+            border: 1px solid rgba(220, 227, 242, 0.7);
+            box-shadow: 0 6px 20px rgba(20, 24, 31, 0.03);
+        }
+
+        .faq-item h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #14181f;
+            margin-bottom: 8px;
+        }
+
+        .faq-item p {
+            font-size: 0.95rem;
+            color: #55607a;
+            line-height: 1.55;
+        }
+
+        /* Bottom CTA */
+        .bottom-cta {
+            background: linear-gradient(135deg, #14181f 0%, #202b3c 100%);
+            color: #fff;
+            border-radius: 28px;
+            padding: clamp(36px, 6vh, 60px) clamp(24px, 5vw, 48px);
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 20px 50px rgba(20, 24, 31, 0.2);
+        }
+
+        .bottom-cta h2 {
+            font-size: clamp(1.8rem, 2.5vw + 1vh, 2.6rem);
+            font-weight: 800;
+            letter-spacing: -0.8px;
+            margin-bottom: 12px;
+        }
+
+        .bottom-cta p {
+            color: #a3b1cc;
+            font-size: 1.05rem;
+            max-width: 540px;
+            margin: 0 auto 28px;
+            line-height: 1.6;
         }
 
         footer {
             text-align: center;
-            padding: clamp(8px, 1.5vh, 20px) 24px;
+            padding: 32px 24px;
             border-top: 1px solid rgba(20, 24, 31, 0.08);
-            font-size: 0.72rem;
+            font-size: 0.82rem;
             color: #7c8494;
-            flex-shrink: 0;
+            width: 100%;
+            margin-top: auto;
         }
 
         footer a {
             color: #55607a;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 12px;
+            font-weight: 500;
+            transition: color 0.2s;
         }
 
         footer a:hover {
             color: #14181f;
         }
 
-        @media (max-height: 600px) {
-            .hero-logo {
-                display: none;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header {
-                padding: 16px 20px;
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
             }
 
-            nav a {
-                margin-left: 14px;
+            .use-cases-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 12px 14px;
+                font-size: 0.86rem;
             }
         }
     </style>
@@ -272,42 +667,238 @@
     <div class="blob blob-indigo"></div>
 
     <header>
-        <div class="logo"><img src="/assets/logo.png" alt="Settlr logo" class="logo-icon" /> Settlr</div>
+        <a href="/" class="logo">
+            <img src="/assets/logo.png" alt="Settlr logo" class="logo-icon" width="36" height="36" />
+            Settlr
+        </a>
         <nav>
+            <a href="#features">Features</a>
+            <a href="#compare">Why Settlr</a>
             <a href="/support.html">Support</a>
-            <a href="/privacy-policy.html">Privacy</a>
-            <a href="/download.html">Download</a>
+            <a href="/download.html" class="nav-btn">Get App</a>
         </nav>
     </header>
 
     <main>
-        <img src="/assets/logo.png" alt="Settlr logo" class="hero-logo" />
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-badge">✨ The Smart, Free Way to Share Expenses</div>
+            <img src="/assets/logo.png" alt="Settlr App Icon" class="hero-logo" width="96" height="96" />
 
-        <h1>Split expenses.<br /><span>Settle up effortlessly.</span></h1>
+            <h1>Split expenses.<br /><span>Settle up effortlessly.</span></h1>
 
-        <p class="subtitle">
-            Settlr makes it easy to track shared expenses with friends, family, and housemates —
-            and settle debts in one tap.
-        </p>
+            <p class="subtitle">
+                Settlr makes it simple to track shared expenses with roommates, friends, family, and travel groups —
+                simplify balances automatically and settle debts in one tap.
+            </p>
 
-        <div class="store-badges">
-            <a href="https://apps.apple.com/gr/app/settlr-expense-splitter/id6762055449">
-                <img src="/assets/app-store-badge.svg" alt="Download on the App Store" />
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.sundry.settlr">
-                <img src="/assets/google-play-badge.png" alt="Get it on Google Play" class="google-play-badge" />
-            </a>
-        </div>
+            <div class="store-badges">
+                <a href="https://apps.apple.com/app/settlr-expense-splitter/id6762055449" target="_blank"
+                    rel="noopener">
+                    <img src="/assets/app-store-badge.svg" alt="Download Settlr on Apple App Store" width="180"
+                        height="54" />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.sundry.settlr" target="_blank"
+                    rel="noopener">
+                    <img src="/assets/google-play-badge.png" alt="Get Settlr on Google Play Store"
+                        class="google-play-badge" width="180" height="72" />
+                </a>
+            </div>
+        </section>
+
+        <!-- Use Cases -->
+        <section class="use-cases" id="use-cases">
+            <div class="section-header">
+                <div class="section-tag">Perfect For Any Group</div>
+                <h2 class="section-title">Designed for real-world shared spending</h2>
+            </div>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <h4>🏡 Roommates & Housemates</h4>
+                    <p>Track rent, utilities, groceries, household items, and internet without messy spreadsheets.</p>
+                </div>
+                <div class="use-case-card">
+                    <h4>✈️ Vacations & Group Trips</h4>
+                    <p>Log flights, hotels, dinners, and excursions in any currency with automatic multi-currency
+                        conversions.</p>
+                </div>
+                <div class="use-case-card">
+                    <h4>💑 Couples & Partners</h4>
+                    <p>Keep a clear, stress-free record of joint dining, date nights, and shared monthly subscriptions.
+                    </p>
+                </div>
+                <div class="use-case-card">
+                    <h4>🎉 Events, Dinners & Parties</h4>
+                    <p>Split dinner checks, birthday gifts, and bachelor/bachelorette party tabs fairly in seconds.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="features" id="features">
+            <div class="section-header">
+                <div class="section-tag">Powerful Features</div>
+                <h2 class="section-title">Everything you need to manage group costs</h2>
+                <p class="section-desc">No complicated accounting jargon. Just clear balances and effortless
+                    settlements.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Flexible Bill Splitting</h3>
+                    <p>Split bills equally, by exact custom amounts, or by percentage to match exactly who paid for
+                        what.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Debt Simplification</h3>
+                    <p>Our smart algorithm minimizes the total number of payments needed across the group so settling is
+                        easy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Multi-Currency Support</h3>
+                    <p>Add expenses in foreign currencies while traveling abroad without manual conversion headaches.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Group Collaboration Boards</h3>
+                    <p>Organize group notes, shared checklists, countdown timers, maps, and weather widgets all in one
+                        spot.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Instant Guest & Web Invites</h3>
+                    <p>Invite friends with simple share links or codes. Guest members can join and view balances
+                        immediately.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Analytics & CSV Exports</h3>
+                    <p>View detailed spending breakdowns by category and export clean CSV reports whenever needed.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table (GEO query target: Best Splitwise Alternative) -->
+        <section class="comparison-section" id="compare">
+            <div class="section-header">
+                <div class="section-tag">Why Settlr</div>
+                <h2 class="section-title">How Settlr compares to the alternatives</h2>
+                <p class="section-desc">Compare Settlr with traditional manual spreadsheets and restrictive bill
+                    splitting apps.</p>
+            </div>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature / Capability</th>
+                            <th class="highlight-col">Settlr</th>
+                            <th>Traditional Spreadsheets</th>
+                            <th>Other Expense Splitters</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Free Unlimited Expenses</strong></td>
+                            <td class="highlight-col"><span class="check-yes">✓ Included</span></td>
+                            <td><span class="check-yes">✓ Yes (Manual)</span></td>
+                            <td><span class="check-no">✕ Often Daily Limits</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Automatic Debt Simplification</strong></td>
+                            <td class="highlight-col"><span class="check-yes">✓ 1-Tap Algorithm</span></td>
+                            <td><span class="check-no">✕ Complex Formulas</span></td>
+                            <td><span class="check-yes">✓ Included</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Multi-Currency Support</strong></td>
+                            <td class="highlight-col"><span class="check-yes">✓ Built-in</span></td>
+                            <td><span class="check-no">✕ Manual Rates</span></td>
+                            <td><span class="check-yes">✓ Built-in</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Group Boards & Checklists</strong></td>
+                            <td class="highlight-col"><span class="check-yes">✓ Integrated</span></td>
+                            <td><span class="check-no">✕ Separate App</span></td>
+                            <td><span class="check-no">✕ Not Available</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Guest Access (No mandatory signup)</strong></td>
+                            <td class="highlight-col"><span class="check-yes">✓ Supported</span></td>
+                            <td><span class="check-yes">✓ Shared Link</span></td>
+                            <td><span class="check-no">✕ Forced Registration</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>CSV Data Export</strong></td>
+                            <td class="highlight-col"><span class="check-yes">✓ Free Export</span></td>
+                            <td><span class="check-yes">✓ Native</span></td>
+                            <td><span class="check-no">✕ Often Premium Only</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Mini FAQ for AI / Rich Snippet Extraction -->
+        <section class="faq-section" id="faq">
+            <div class="section-header">
+                <div class="section-tag">Questions & Answers</div>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>Is Settlr free to use?</h3>
+                    <p>Yes, Settlr is completely free to download on iOS and Android. You can create groups, log shared
+                        expenses, and simplify balances without hidden paywalls or subscription barriers.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Does Settlr transfer real money or link bank accounts?</h3>
+                    <p>No. Settlr is an expense tracking and balance calculator tool. It calculates who owes whom and
+                        simplifies debt amounts. Actual payments (via cash, Revolut, Venmo, bank transfer, etc.) take
+                        place externally and are recorded in Settlr with one tap.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I split bills by custom percentages or unequal amounts?</h3>
+                    <p>Absolutely. Settlr allows you to split each expense equally, by exact dollar amounts, or by
+                        custom percentages, ensuring everyone pays only their fair share.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I invite my friends or roommates to a group?</h3>
+                    <p>You can share an instant invite link or group code via WhatsApp, iMessage, Messenger, or email.
+                        Members can join as guests or registered accounts.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom CTA -->
+        <section class="bottom-cta">
+            <h2>Ready to settle up without the stress?</h2>
+            <p>Download Settlr today for iOS and Android and start managing shared expenses the smart way.</p>
+            <div class="store-badges">
+                <a href="https://apps.apple.com/app/settlr-expense-splitter/id6762055449" target="_blank"
+                    rel="noopener">
+                    <img src="/assets/app-store-badge.svg" alt="Download Settlr on Apple App Store" width="180"
+                        height="54" />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.sundry.settlr" target="_blank"
+                    rel="noopener">
+                    <img src="/assets/google-play-badge.png" alt="Get Settlr on Google Play Store"
+                        class="google-play-badge" width="180" height="72" />
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>
             <a href="/privacy-policy.html">Privacy Policy</a>
-            <a href="/terms-and-conditions.html">Terms</a>
+            <a href="/terms-and-conditions.html">Terms & Conditions</a>
             <a href="/support.html">Support</a>
             <a href="/delete-account-instructions.html">Delete Account</a>
         </p>
-        <p style="margin-top: 12px;">&copy; 2026 Settlr. All rights reserved.</p>
+        <p style="margin-top: 14px;">&copy; 2026 Settlr. Split expenses. Settle up effortlessly.</p>
     </footer>
 </body>
 
