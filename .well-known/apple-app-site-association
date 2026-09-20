@@ -5,10 +5,14 @@
             {
                 "appID": "MM85XQEN44.com.sundry.settlr",
                 "paths": [
+                    "/",
                     "/join",
                     "/join/*",
                     "/invite",
-                    "/invite/*"
+                    "/invite/*",
+                    "/download",
+                    "/download.html",
+                    "*"
                 ]
             }
         ]
